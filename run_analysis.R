@@ -2,7 +2,7 @@
 clean.data <- function(){
         
         ## download the data and unzip it to data directory
-        getInitialData()
+        ##getInitialData()
         
         ## Set the working directory for this task
         dir.path <- "./data/UCI HAR Dataset"
@@ -37,9 +37,9 @@ clean.data <- function(){
         ## Get the final tidy data with descriptive column names
         tidy.data <- getTidyData(dir.path,average.data)
         
-        ## Write tidy data to a CSv file
-        message("Writing the tidy data to a CSv file")
-        write.csv(tidy.data,file=paste(dir.path,"/UCI_HAR_Dataset.csv",sep = ""),row.names=FALSE)
+        ## Write tidy data to a txt file
+        message("Writing the tidy data to a txt file")
+        write.table(tidy.data,file=paste(dir.path,"/UCI_HAR_Dataset.txt",sep = ""),row.names=FALSE)
 }
 
 getInitialData <- function(){

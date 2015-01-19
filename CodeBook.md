@@ -22,7 +22,7 @@ The code book describes the variables, the data, and any transformations or work
 * Calculate average of each activity for each subject for all the feature vectors.
 * Read the activity labels and merge it to the average data.
 * Get the final tidy dataset with descriptive column names.
-* Write the tidy dataset to a CSv file.
+* Write the tidy dataset to a txt file.
 
 
 
